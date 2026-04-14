@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { HbdCard } from './hbd-card/hbd-card';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [HbdCard],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('hbd-tafadzwa-2026');
+  
 }

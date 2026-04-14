@@ -6,4 +6,18 @@
     <p class="text-gray-500 mb-4">Happy Birthday 🎉 to:</p>
 
     <h1 class="text-3xl">{{ birthdayBoy }}</h1>
+    <p>Turning 15 @ 15.04.2026</p>
+    <p class="text-gray-500 mb-4">Send some love to the birthday boy 😍</p>
+
+    <textarea [(ngModel)]="message" class="w-full border border-zinc-300 p-4 rounded-md" placeholder="Enter your message to the birthday boy"></textarea>
+    <a href="https://wa.me/263788292400?text={{ message }}" target="_blank" class="flex text-white hover:bg-green-300 w-full bg-green-500 rounded-[10px] p-2 items-center justify-center">
+        <lucide-icon class="mr-4" [img]="icons.MessageCircle"></lucide-icon>
+        Send on whatsapp
+    </a>
+
+    <p class="text-gray-500">---or---</p>
+    <a href="https://instagram.com/__va.sibanda" target="_blank" class="flex text-white hover:bg-red-300 w-full bg-red-500 rounded-[10px] p-2 items-center justify-center">
+        <lucide-icon class="mr-4" [img]="icons.Instagram"></lucide-icon>
+        Get In Touch through my Instagram
+    </a>
 </div>
